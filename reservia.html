@@ -30,7 +30,12 @@
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <h2>En plein centre ville ou en pleine nature</h2>
             </div>
-            <div id="form_recherche"></div>
+            <div id="form_recherche"><form method="POST" action="traitement.php">
+                <p>
+                    <label for="ville"><i class="fas fa-map-marker-alt"></i></label>
+                    <input type="search" name="ville" id="ville" placeholder="Ville" />
+                </p>
+            </form></div>
             <div id="filtres_recherche">
                 <div id="filtres">Filtres</div>
                 <div id="économique"><i class="fas fa-money-bill-wave"></i> Économique</div>
