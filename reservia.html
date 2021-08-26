@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e89dd787e3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/OpenClassrooms/formation_dev/P2_Pignolet_Dylan/Projet_2_reservia/reservia.css" />
+    <link rel="stylesheet" href="reservia.css" />
     <title>Reservia</title>
 </head>
 <body>
@@ -47,7 +47,7 @@
         </div>
         <div id="bloc_hébergements">
             <div id="hébergements_marseille">
-                <div id="titre_marseille">
+                <div class="titre_marseille">
                     <h3>Hébergements à Marseille</h3>
                 </div>
                 <div class="marseille">
@@ -56,7 +56,7 @@
                     <div class="description">
                         <p><h4>Auberge la Cannebière</h4></p>
                         <p>Nuit à partir de 25€</p>
-                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                        <p><span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="no_star"><i class="fas fa-star"></i></span></p>
                     </div>
                     </a>
                 </div>
@@ -66,7 +66,7 @@
                     <div class="description">
                         <p><h4>Hôtel du Port</h4></p>
                         <p>Nuit à partir de 52€</p>
-                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <p><span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></p>
                      </div>
                      </a>
                 </div>
@@ -76,7 +76,7 @@
                     <div class="description">
                         <p><h4>Hôtel Les mouettes</h4></p>
                         <p>Nuit à partir de 76€</p>
-                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                        <p><span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="no_star"><i class="fas fa-star"></i></span></p>
                     </div>
                     </a>
                 </div>
@@ -86,7 +86,7 @@
                     <div class="description">
                         <p><h4>Hôtel de la mer</h4></p>
                         <p>Nuit à partir de 46€</p>
-                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+                        <p><span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="no_star"><i class="fas fa-star"></i><i class="fas fa-star"></i></span></p>
                     </div>
                     </a>
                 </div>
@@ -96,7 +96,7 @@
                     <div class="description">
                         <p><h4>Auberge Le Panier</h4></p>
                         <p>Nuit à partir de 23€</p>
-                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                        <p><span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="no_star"><i class="fas fa-star"></i></span></p>
                     </div> 
                     </a>   
                 </div>
@@ -106,38 +106,46 @@
                     <div class="description">
                         <p><h4>Hôtel chez Amina</h4></p>
                         <p>Nuit à partir de 96€</p>
-                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <p><span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></p>
                     </div>
                     </a>
                 </div>
                 <div>
-                    <p>Afficher plus</p>
+                    <p class="titre_marseille">Afficher plus</p>
                 </div>
             </div>
             <div id="les_plus_populaires">
                 <h3>Les plus populaires <i class="fas fa-chart-line"></i></h3>
                 <div class="populaires">
-                    <div id="photo_soleil"><img src="/OpenClassrooms/formation_dev/P2_Pignolet_Dylan/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photo_soleil" /></div>
+                    <a href="#">
+                    <div class="img_populaire">
+                        <img src="/OpenClassrooms/formation_dev/P2_Pignolet_Dylan/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photo_soleil" />
+                    </div>
                     <div class="description_populaire">
                         <p><h4>Hôtel Le soleil du matin</h4></p>
                         <p>Nuit à partir de 128€</p>
-                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <p class="note"><span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></p>
                     </div>
+                    </a>
                 </div>
                 <div class="populaires">
-                    <div id="photo_coeur"><img src="/OpenClassrooms/formation_dev/P2_Pignolet_Dylan/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="photo_coeur" /></div>
-                    <div class="description_populaire">
-                        <p><h4>Au coeur de l'eau<br />Chambres d'hôtes</h4></p>
+                    <div class="img_populaire">
+                        <img src="/OpenClassrooms/formation_dev/P2_Pignolet_Dylan/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="photo_coeur" />
+                    </div>
+                    <div class="description_populaire_2">
+                        <p><h4>Au coeur de l'eau Chambres d'hôtes</h4></p>
                         <p>Nuit à partir de 71€</p>
-                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                        <p class="note_2"><span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="no_star"><i class="fas fa-star"></i></span></p>
                     </div>
                 </div>
                 <div class="populaires">
-                    <div id="photo_bleu_et_blanc"><img src="/OpenClassrooms/formation_dev/P2_Pignolet_Dylan/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="photo_bleu_et_blanc" /></div>
+                    <div class="img_populaire">
+                        <img src="/OpenClassrooms/formation_dev/P2_Pignolet_Dylan/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="photo_bleu_et_blanc" />
+                    </div>
                     <div class="description_populaire">
                         <p><h4>Hôtel Tout bleu et Blanc</h4></p>
                         <p>Nuit à partir de 68€</p>
-                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                        <p class="note"><span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="no_star"><i class="fas fa-star"></i></span></p>
                     </div>
                 </div>
             </div>
