@@ -23,6 +23,7 @@
                     <li><a href="#">Activités</a></li>
                     <li><a href="#">S'inscrire</a></li>
                 </ul>
+            </nav>    
         </header>
 
         <div id="recherche_hébergement">
@@ -32,16 +33,15 @@
             </div>
             <div id="form_recherche"><form method="POST" action="traitement.php">
                 <p>
-                    <label for="ville"><i class="fas fa-map-marker-alt"></i></label>
-                    <input type="search" name="ville" id="ville" value="Marseille, France" /><input type="submit" value="Rechercher" />
+                    <label for="ville"><i class="fas fa-map-marker-alt"></i></label><input type="search" name="ville" id="ville" value="Marseille, France" /><input type="submit" value="Rechercher" />
                 </p>
             </form></div>
             <div id="filtres_recherche">
                 <div id="filtres">Filtres</div>
-                <div id="économique"><i class="fas fa-money-bill-wave"></i> Économique</div>
-                <div id="familial"><i class="fas fa-child"></i> Familial</div>
-                <div id="romantique"><i class="fas fa-heart"></i> Romantique</div>
-                <div id="animaux"><i class="fas fa-dog"></i> Animaux autorisés</div>
+                <div class="filtres"><i class="fas fa-money-bill-wave"></i> Économique</div>
+                <div class="filtres"><i class="fas fa-child"></i> Familial</div>
+                <div class="filtres"><i class="fas fa-heart"></i> Romantique</div>
+                <div class="filtres"><i class="fas fa-dog"></i> Animaux autorisés</div>
             </div>
             <div id="information"><i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville</div>
         </div>
@@ -50,6 +50,7 @@
                 <div class="titre_marseille">
                     <h3>Hébergements à Marseille</h3>
                 </div>
+                <div id="boites_marseille">
                 <div class="marseille">
                     <a href="#">
                     <div class="img_marseille"><img src="/OpenClassrooms/formation_dev/P2_Pignolet_Dylan/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo_cannebière" /></div>
@@ -111,11 +112,12 @@
                     </a>
                 </div>
                 <div>
+                </div>    
                     <p class="titre_marseille">Afficher plus</p>
                 </div>
             </div>
             <div id="les_plus_populaires">
-                <h3>Les plus populaires <i class="fas fa-chart-line"></i></h3>
+                <h3><span id="titre_populaire">Les plus populaires</span><i class="fas fa-chart-line"></i></h3>
                 <div class="populaires">
                     <a href="#">
                     <div class="img_populaire">
@@ -129,6 +131,7 @@
                     </a>
                 </div>
                 <div class="populaires">
+                    <a href="#">
                     <div class="img_populaire">
                         <img src="/OpenClassrooms/formation_dev/P2_Pignolet_Dylan/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="photo_coeur" />
                     </div>
@@ -137,8 +140,10 @@
                         <p>Nuit à partir de 71€</p>
                         <p class="note_2"><span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="no_star"><i class="fas fa-star"></i></span></p>
                     </div>
+                    </a>
                 </div>
                 <div class="populaires">
+                    <a href="#">
                     <div class="img_populaire">
                         <img src="/OpenClassrooms/formation_dev/P2_Pignolet_Dylan/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="photo_bleu_et_blanc" />
                     </div>
@@ -147,6 +152,7 @@
                         <p>Nuit à partir de 68€</p>
                         <p class="note"><span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="no_star"><i class="fas fa-star"></i></span></p>
                     </div>
+                    </a>
                 </div>
             </div>
         </div>

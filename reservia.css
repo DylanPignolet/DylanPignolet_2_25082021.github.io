@@ -11,6 +11,7 @@ body
 {
     font-family: 'Raleway', Arial, sans-serif;
     color: black;
+    margin: 0 2%;
 }
 
 #page
@@ -25,10 +26,90 @@ header
     justify-content: space-between;
 }
 
+#logo
+{
+    width: 50%;
+}
+
+nav
+{  
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Filtres et recherche */
+
 #filtres_recherche, h1, h2, h3, h4
 {
     font-weight: bold;
     color: black;
+}
+
+#filtres_recherche
+{
+    display: inline-flex;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 100%;
+    overflow: auto;
+}
+
+#filtres_recherche .fas
+{
+    color: #0065fc;
+    background-color: #deebff;
+    border: 1px #deebff solid;
+    border-radius: 100%;
+    border-left: none;
+    border-right: none;
+}
+
+.filtres
+{
+    border: 2px #dddada solid;
+    border-radius: 15px;
+    margin-left: 1%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+input[type="submit" i]
+{
+   background-color: #0065fc;
+   color: #ffffff;
+   border-radius: 0px 10px 10px 0px;
+   width: 5%;
+   height: 4em;
+   border-style: none;
+   border-left: none;
+    border-right: none;
+}
+
+input[type="search" i]
+{
+    width: 10%;
+    height: 4em;
+    font-weight: bold;
+    border: 1px #f2f2f2 solid;
+    border-left: none;
+    border-right: none;
+}
+
+#form_recherche label
+{
+    color: #000;
+    background-color: #f2f2f2;
+    border: 1px #f2f2f2 solid;
+    border-radius: 10px 0px 0px 10px;
+    width: 2%;
+    padding: 1rem 1.25rem;
+}
+
+#information .fas
+{
+    color: #0065fc;
 }
 
 /* Bloc des hébergements à Marseille */
@@ -36,12 +117,13 @@ header
 #bloc_hébergements
 {
     display: flex;
+    justify-content: space-around;
 }
 
 #hébergements_marseille
 {
     width: 60%;
-    height: 50em;
+    height: 45em;
     margin-left: 1%;
     background-color: #f2f2f2;
     border-radius: 15px;
@@ -128,22 +210,51 @@ a
 {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 30%;
-    height: 50em;
+    height: 45em;
     margin-left: 1%;
     background-color: #f2f2f2;
     border-radius: 15px;
+}
+
+#les_plus_populaires h3
+{
+    display: flex;
+    width: 100%;
+}
+
+#les_plus_populaires h3 .fas
+{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 10%;
+}
+
+#titre_populaire
+{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 10%;
 }
 
 .populaires
 {
     display: flex;
     width: 80%;
+    margin-bottom: 8%;
     height: 10em;
-    margin: 2%;
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0px 2px 5px #a09d9d;
+}
+
+.populaires a
+{
+    display: flex;
+    width: 100%;
 }
 
 .img_populaire
