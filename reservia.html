@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e89dd787e3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="reservia.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Reservia</title>
 </head>
 <body>
@@ -19,9 +22,9 @@
 
             <nav>
                 <ul>
-                    <li><a href="#">Hébergements</a></li>
-                    <li><a href="#">Activités</a></li>
-                    <li><a href="#">S'inscrire</a></li>
+                    <li><a class="nav_top" href="#">Hébergements</a></li>
+                    <li><a class="nav_top" href="#">Activités</a></li>
+                    <li><a href="#"><span id="inscription">S'inscrire</span></a></li>
                 </ul>
             </nav>    
         </header>
@@ -51,67 +54,67 @@
                     <h3>Hébergements à Marseille</h3>
                 </div>
                 <div id="boites_marseille">
-                <div class="marseille">
-                    <a href="#">
-                    <div class="img_marseille"><img src="/OpenClassrooms/formation_dev/P2_Pignolet_Dylan/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo_cannebière" /></div>
-                    <div class="description">
-                        <p><h4>Auberge la Cannebière</h4></p>
-                        <p>Nuit à partir de 25€</p>
-                        <p><span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="no_star"><i class="fas fa-star"></i></span></p>
+                    <div class="marseille">
+                        <a href="#">
+                        <div class="img_marseille"><img src="/OpenClassrooms/formation_dev/P2_Pignolet_Dylan/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo_cannebière" /></div>
+                        <div class="description">
+                            <p><h4>Auberge la Cannebière</h4></p>
+                            <p>Nuit à partir de 25€</p>
+                            <p><span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="no_star"><i class="fas fa-star"></i></span></p>
+                        </div>
+                        </a>
                     </div>
-                    </a>
-                </div>
-                <div class="marseille">
-                    <a href="#">
-                    <div class="img_marseille"><img src="/OpenClassrooms/formation_dev/P2_Pignolet_Dylan/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="photo_port" /></div>
-                    <div class="description">
-                        <p><h4>Hôtel du Port</h4></p>
-                        <p>Nuit à partir de 52€</p>
-                        <p><span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></p>
-                     </div>
-                     </a>
-                </div>
-                <div class="marseille">
-                    <a href="#">
-                    <div class="img_marseille"><img src="/OpenClassrooms/formation_dev/P2_Pignolet_Dylan/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="photo_mouettes" /></div>
-                    <div class="description">
-                        <p><h4>Hôtel Les mouettes</h4></p>
-                        <p>Nuit à partir de 76€</p>
-                        <p><span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="no_star"><i class="fas fa-star"></i></span></p>
+                    <div class="marseille">
+                        <a href="#">
+                        <div class="img_marseille"><img src="/OpenClassrooms/formation_dev/P2_Pignolet_Dylan/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="photo_port" /></div>
+                        <div class="description">
+                            <p><h4>Hôtel du Port</h4></p>
+                            <p>Nuit à partir de 52€</p>
+                            <p><span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></p>
+                        </div>
+                        </a>
                     </div>
-                    </a>
-                </div>
-                <div class="marseille">
-                    <a href="#">
-                    <div class="img_marseille"><img src="/OpenClassrooms/formation_dev/P2_Pignolet_Dylan/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="photo_mer" /></div>
-                    <div class="description">
-                        <p><h4>Hôtel de la mer</h4></p>
-                        <p>Nuit à partir de 46€</p>
-                        <p><span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="no_star"><i class="fas fa-star"></i><i class="fas fa-star"></i></span></p>
+                    <div class="marseille">
+                        <a href="#">
+                        <div class="img_marseille"><img src="/OpenClassrooms/formation_dev/P2_Pignolet_Dylan/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="photo_mouettes" /></div>
+                        <div class="description">
+                            <p><h4>Hôtel Les mouettes</h4></p>
+                            <p>Nuit à partir de 76€</p>
+                            <p><span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="no_star"><i class="fas fa-star"></i></span></p>
+                        </div>
+                        </a>
                     </div>
-                    </a>
-                </div>
-                <div class="marseille">
-                    <a href="#">
-                    <div class="img_marseille"><img src="/OpenClassrooms/formation_dev/P2_Pignolet_Dylan/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="photo_panier" /></div>
-                    <div class="description">
-                        <p><h4>Auberge Le Panier</h4></p>
-                        <p>Nuit à partir de 23€</p>
-                        <p><span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="no_star"><i class="fas fa-star"></i></span></p>
-                    </div> 
-                    </a>   
-                </div>
-                <div class="marseille">
-                    <a href="#">
-                    <div class="img_marseille"><img src="/OpenClassrooms/formation_dev/P2_Pignolet_Dylan/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="photo_amina" /></div>
-                    <div class="description">
-                        <p><h4>Hôtel chez Amina</h4></p>
-                        <p>Nuit à partir de 96€</p>
-                        <p><span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></p>
+                    <div class="marseille">
+                        <a href="#">
+                        <div class="img_marseille"><img src="/OpenClassrooms/formation_dev/P2_Pignolet_Dylan/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="photo_mer" /></div>
+                        <div class="description">
+                            <p><h4>Hôtel de la mer</h4></p>
+                            <p>Nuit à partir de 46€</p>
+                            <p><span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="no_star"><i class="fas fa-star"></i><i class="fas fa-star"></i></span></p>
+                        </div>
+                        </a>
                     </div>
-                    </a>
-                </div>
-                <div>
+                    <div class="marseille">
+                        <a href="#">
+                        <div class="img_marseille"><img src="/OpenClassrooms/formation_dev/P2_Pignolet_Dylan/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="photo_panier" /></div>
+                        <div class="description">
+                            <p><h4>Auberge Le Panier</h4></p>
+                            <p>Nuit à partir de 23€</p>
+                            <p><span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="no_star"><i class="fas fa-star"></i></span></p>
+                        </div> 
+                        </a>   
+                    </div>
+                    <div class="marseille">
+                        <a href="#">
+                        <div class="img_marseille"><img src="/OpenClassrooms/formation_dev/P2_Pignolet_Dylan/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="photo_amina" /></div>
+                        <div class="description">
+                            <p><h4>Hôtel chez Amina</h4></p>
+                            <p>Nuit à partir de 96€</p>
+                            <p><span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></p>
+                        </div>
+                        </a>
+                    </div>
+                    <div>
                 </div>    
                     <p class="titre_marseille">Afficher plus</p>
                 </div>

@@ -1,15 +1,8 @@
-/* Définition des polices personnalisées */
-
-@font-face {
-    font-family: 'Raleway';
-    src: url(/OpenClassrooms/formation_dev/P2_Pignolet_Dylan/Projet_2_reservia/Raleway-Italic-VariableFont_wght.ttf) format('truetype');
-    src: url(/OpenClassrooms/formation_dev/P2_Pignolet_Dylan/Projet_2_reservia/Raleway-VariableFont_wght.ttf) format('truetype');
-}
 /* Éléments principaux de la page */
 
 body
 {
-    font-family: 'Raleway', Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: black;
     margin: 0 2%;
 }
@@ -24,6 +17,7 @@ header
 {
     display: flex;
     justify-content: space-between;
+    margin-top: 2%;
 }
 
 #logo
@@ -37,6 +31,48 @@ nav
     display: flex;
     justify-content: center;
     overflow: hidden;
+}
+
+nav ul
+{
+    display: flex;
+    list-style-type: none;
+}
+
+nav li
+{
+    margin-right: 30%;
+}
+
+nav a 
+{
+    text-decoration: none;
+}
+
+a
+{
+    text-decoration: none;
+    color: black; 
+}
+
+.nav_top
+{
+    font-size: 1.2em;
+    padding: 11% 15% 0 15%;
+}
+
+#inscription
+{
+    color: #0065fc;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.nav_top:hover
+{
+    color: #0065fc;
+    border-top: 1px #0065fc solid;
+    font-weight: 500;
 }
 
 /* Filtres et recherche */
@@ -129,16 +165,28 @@ input[type="search" i]
     border-radius: 15px;
 }
 
+#boites_marseille
+{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .titre_marseille
 {
     display: block;
+    font-weight: bold;
+    width: 100%;
+    height: 2em;
+    margin-left: 4%;
+    font-size: 1.2em;
 }
 
 .marseille
 {
     display: inline-block;
-    width: 25%;
-    height: 15em;
+    width: 28%;
+    height: 16em;
     margin: 2%;
     background-color: #ffffff;
     border-radius: 15px;
@@ -155,7 +203,8 @@ input[type="search" i]
 {
     width: 100%;
     height: 5em;
-    padding-left: 5px;
+    padding-left: 5%;
+    padding-top: 4%;
     color: black;
 }
 
@@ -171,27 +220,6 @@ input[type="search" i]
     object-fit: cover;
     border-radius: 15px 15px 0px 0px;
     padding: 1%;
-}
-
-nav ul
-{
-    display: flex;
-    list-style-type: none;
-}
-
-nav li
-{
-    margin-right: 10%;
-}
-
-nav a 
-{
-    text-decoration: none;
-}
-
-a
-{
-    text-decoration: none;  
 }
 
 .star
@@ -270,6 +298,7 @@ a
     height: 96%;
     border-radius: 15px 0px 0px 15px;
     padding: 2%;
+    object-fit: cover;
 }
 
 .description_populaire
