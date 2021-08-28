@@ -4,7 +4,7 @@ body
 {
     font-family: 'Raleway', sans-serif;
     color: black;
-    margin: 0 2%;
+    margin: 0 2% 2%;
 }
 
 #page
@@ -27,6 +27,7 @@ header
 #logo img
 {
     padding-top: 50%;
+    margin: 20%;
 }
 
 nav
@@ -92,6 +93,21 @@ a
     border-top: 1px #0065fc solid;
     font-weight: 500;
 }
+#titre_recherche
+{
+    margin: 1% 0% 2% 1%;
+}
+
+#titre_recherche h1
+{
+    font-size: 1.5rem;
+}
+
+#titre_recherche h2
+{
+    font-weight: 500;
+    font-size: 1.1rem;
+}
 
 /* Filtres et recherche */
 
@@ -103,52 +119,104 @@ a
 
 #filtres_recherche
 {
-    display: inline-flex;
-    justify-content: flex-start;
-    width: 100%;
-    max-width: 100%;
-    overflow: auto;
-}
-
-#filtres_recherche .fas
-{
-    color: #0065fc;
-    background-color: #deebff;
-    border: 1px #deebff solid;
-    border-radius: 100%;
-    border-left: none;
-    border-right: none;
-}
-
-.filtres
-{
-    border: 2px #dddada solid;
-    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
     margin-left: 1%;
-    font-size: 1.2em;
-    font-weight: bold;
+}
+
+#filtres_texte
+{
+    align-self: center;
+}
+
+.tout_filtres
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filtre
+{
+    display: flex;
+    align-items: center;
+    height: 46px;
+    border: 2px solid #f2f2f2;
+    border-left: none;
+    margin-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+    transition: border 0.5s;
+}
+
+.filtre span
+{
+    padding-left: 12px;
+}
+
+.icone_filtre
+{
+    position: relative;
+    right: 1px;
+    border-radius: 50%;
+    background-color: #deebff;
+    height: 50px;
+    width: 50px;
+}
+
+.icone_filtre i
+{
+    display: flex;
+    justify-content: center;
+    margin: 30%;
+    color: #0065fc;
+}
+
+.filtre:hover
+{
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+         transform: scale(1.1);
+    color: #0065fc;
+    border-color: #0065fc;
+    background: transparent;
+     transition: border 0s;
 }
 
 input[type="submit" i]
 {
-   background-color: #0065fc;
-   color: #ffffff;
-   border-radius: 0px 10px 10px 0px;
-   width: 5%;
-   height: 4em;
-   border-style: none;
-   border-left: none;
-    border-right: none;
+    background-color: #0065fc;
+    color: #ffffff;
+    border-radius: 0px 15px 15px 0px;
+    width: 7%;
+    height: 50px;
+    font-size: 1.1rem;
+    border-style: none;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit" i]:hover
+{
+    background-color: #4288f1;
 }
 
 input[type="search" i]
 {
-    width: 10%;
-    height: 4em;
-    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    width: 12%;
+    height: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
     border: 1px #f2f2f2 solid;
     border-left: none;
     border-right: none;
+    padding-left: 0.5%;
 }
 
 #form_recherche label
@@ -156,9 +224,15 @@ input[type="search" i]
     color: #000;
     background-color: #f2f2f2;
     border: 1px #f2f2f2 solid;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 15px 0px 0px 15px;
     width: 2%;
-    padding: 1rem 1.25rem;
+    padding: 0.85rem 1rem;
+    margin-left: 1%;
+}
+
+#form_recherche
+{
+    margin: 2% 0% 2% 0%;
 }
 
 #information .fas
@@ -166,7 +240,24 @@ input[type="search" i]
     color: #0065fc;
 }
 
+#information
+{
+    margin: 2% 0% 2% 1%;
+}
+
 /* Bloc des hébergements à Marseille */
+
+@media (max-width: 800px) 
+{
+    #bloc_hébergements 
+    {
+      flex-direction: column;
+    }
+    #hébergements_marseille, #les_plus_populaires 
+    {
+      flex: 100%;
+    }
+}
 
 #bloc_hébergements
 {
@@ -176,7 +267,6 @@ input[type="search" i]
 
 #hébergements_marseille
 {
-    width: 60%;
     height: 45em;
     margin-left: 1%;
     background-color: #f2f2f2;
@@ -257,7 +347,6 @@ input[type="search" i]
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30%;
     height: 45em;
     margin-left: 1%;
     background-color: #f2f2f2;
