@@ -21,7 +21,7 @@ header
 
 #logo
 {
-    width: 100%;
+    flex: 100%;
 }
 
 #logo img
@@ -32,11 +32,9 @@ header
 
 nav
 {  
-    width: 50%;
+    width: 35%;
     display: flex;
-    justify-content: center;
-    overflow: hidden;
-    padding-top: 2%;
+    padding-top: 3%;
 }
 
 nav ul
@@ -47,12 +45,13 @@ nav ul
 
 nav li
 {
-    margin-right: 30%;
+    margin-right: 15%;
 }
 
 nav a 
 {
     text-decoration: none;
+    padding: 40px 30px 0;
 }
 
 a
@@ -61,16 +60,11 @@ a
     color: black; 
 }
 
-.nav_top
+nav li a:hover
 {
-    font-size: 1.2em;
-    padding: 30% 15% 0 15%;
-}
-
-.nav_top2
-{
-    font-size: 1.2em;
-    padding: 52% 35% 0 35%;
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    padding-top: 40px;
 }
 
 #inscription
@@ -267,7 +261,7 @@ input[type="search" i]
 
 #hébergements_marseille
 {
-    height: 45em;
+    height: 49em;
     margin-left: 1%;
     background-color: #f2f2f2;
     border-radius: 15px;
@@ -288,6 +282,11 @@ input[type="search" i]
     height: 2em;
     margin-left: 4%;
     font-size: 1.2em;
+}
+
+.titre_marseille h3
+{
+    margin-top: 4%;
 }
 
 .marseille
@@ -330,6 +329,11 @@ input[type="search" i]
     border-radius: 15px 15px 0px 0px;
 }
 
+.prix
+{
+    font-weight: bold;
+}
+
 .star
 {
     color: #0065fc;
@@ -340,6 +344,15 @@ input[type="search" i]
     color: #ddd6d6;
 }
 
+.marseille:hover
+{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+         transform: scale(1.1);
+}
+
 /* Bloc des plus populaires */
 
 #les_plus_populaires
@@ -347,7 +360,7 @@ input[type="search" i]
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 45em;
+    height: 49em;
     margin-left: 1%;
     background-color: #f2f2f2;
     border-radius: 15px;
@@ -357,6 +370,7 @@ input[type="search" i]
 {
     display: flex;
     width: 100%;
+    margin-top: 8%;
 }
 
 #les_plus_populaires h3 .fas
@@ -365,6 +379,8 @@ input[type="search" i]
     justify-content: flex-end;
     width: 100%;
     margin-right: 10%;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 #titre_populaire
@@ -373,6 +389,9 @@ input[type="search" i]
     justify-content: flex-start;
     width: 100%;
     margin-left: 10%;
+    font-size: 1.2em;
+    font-weight: bold;
+    height: 1.5em;
 }
 
 .populaires
@@ -380,7 +399,7 @@ input[type="search" i]
     display: flex;
     width: 80%;
     margin-bottom: 8%;
-    height: 10em;
+    height: 11em;
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0px 2px 5px #a09d9d;
@@ -448,4 +467,146 @@ input[type="search" i]
 {
     margin-top: 21%;
     margin-bottom: 1%;
+}
+
+.populaires:hover
+{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+         transform: scale(1.1);
+}
+
+/* Bloc activités */
+
+#activités_à_marseille
+{
+    margin: 3% 0% 3% 1%;
+}
+
+#titre_activités
+{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.activités
+{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.activités a
+{
+    width: 23%;
+}
+
+.grande_activité
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #cfcccc;
+}
+
+.photo_grande_activité
+{
+    width: 100%;
+}
+
+.photo_grande_activité img
+{
+    width: 100%;
+    height: 27em;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.double_activités
+{
+    width: 23%;
+}
+
+.photo_double_activités
+{
+    width: 100%;
+}
+
+.photo_double_activités img
+{
+    width: 100%;
+    height: 9.9em;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.nom_activité
+{
+    padding: 5%;
+    font-weight: bold;
+    font-size: 1.1rem;
+    align-items: center;
+}
+
+.grande_activité:hover
+{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+         transform: scale(1.1);
+}
+
+#fort_de_pomègues:hover, #îles_du_frioul:hover, #garde:hover, #parc_longchamp:hover
+{
+-webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+         transform: scale(1.1);
+}
+
+#fort_de_pomègues, #garde
+{
+    margin-bottom: 10%;
+}
+
+#fort_de_pomègues, #îles_du_frioul, #garde, #parc_longchamp
+{
+    border-radius: 15px;
+    box-shadow: 0 0 10px #cfcccc;
+}
+
+/* footer */
+
+footer
+{
+    display: flex;
+    background-color: #f2f2f2;
+    padding: 40px 50px 40px 50px;
+
+}
+
+footer div
+{
+    flex: 100%;
+}
+
+footer ul
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+footer li
+{
+    margin-bottom: 10px;
+}
+
+footer a:hover
+{
+    color: #0065FC;
 }
