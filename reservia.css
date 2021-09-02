@@ -4,7 +4,11 @@ body
 {
     font-family: 'Raleway', sans-serif;
     color: black;
-    margin: 0 2% 2%;
+}
+
+#page_sans_footer
+{
+    margin: 0 2%;
 }
 
 #page
@@ -89,7 +93,7 @@ nav li a:hover
 }
 #titre_recherche
 {
-    margin: 1% 0% 2% 1%;
+    margin: 1% 0% 2% 0%;
 }
 
 #titre_recherche h1
@@ -118,7 +122,6 @@ nav li a:hover
     font-weight: 700;
     font-size: 1.1rem;
     margin-bottom: 30px;
-    margin-left: 1%;
 }
 
 #filtres_texte
@@ -142,7 +145,7 @@ nav li a:hover
     margin-left: 20px;
     padding-right: 20px;
     border-radius: 25px;
-    transition: border 0.5s;
+    transition: all 0.5s;
 }
 
 .filtre span
@@ -179,7 +182,7 @@ nav li a:hover
     color: #0065fc;
     border-color: #0065fc;
     background: transparent;
-     transition: border 0s;
+     transition: all 0s;
 }
 
 input[type="submit" i]
@@ -221,7 +224,6 @@ input[type="search" i]
     border-radius: 15px 0px 0px 15px;
     width: 2%;
     padding: 0.85rem 1rem;
-    margin-left: 1%;
 }
 
 #form_recherche
@@ -236,7 +238,7 @@ input[type="search" i]
 
 #information
 {
-    margin: 2% 0% 2% 1%;
+    margin: 2% 0% 2% 0%;
 }
 
 /* Bloc des hébergements à Marseille */
@@ -262,9 +264,9 @@ input[type="search" i]
 #hébergements_marseille
 {
     height: 49em;
-    margin-left: 1%;
     background-color: #f2f2f2;
     border-radius: 15px;
+    flex: 80%;
 }
 
 #boites_marseille
@@ -298,6 +300,7 @@ input[type="search" i]
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0px 2px 5px #a09d9d;
+    transition: all 0.5s;
 }
 
 .img_marseille
@@ -351,6 +354,7 @@ input[type="search" i]
      -ms-transform: scale(1.1);
       -o-transform: scale(1.1);
          transform: scale(1.1);
+         transition: all 0s;
 }
 
 /* Bloc des plus populaires */
@@ -364,6 +368,7 @@ input[type="search" i]
     margin-left: 1%;
     background-color: #f2f2f2;
     border-radius: 15px;
+    flex: 28%;
 }
 
 #les_plus_populaires h3
@@ -403,6 +408,7 @@ input[type="search" i]
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0px 2px 5px #a09d9d;
+    transition: all 0.5s;
 }
 
 .populaires a
@@ -476,13 +482,14 @@ input[type="search" i]
      -ms-transform: scale(1.1);
       -o-transform: scale(1.1);
          transform: scale(1.1);
+         transition: all 0s;
 }
 
 /* Bloc activités */
 
 #activités_à_marseille
 {
-    margin: 3% 0% 3% 1%;
+    margin: 3% 0% 3% 0%;
 }
 
 #titre_activités
@@ -510,6 +517,7 @@ input[type="search" i]
     width: 100%;
     border-radius: 15px;
     box-shadow: 0 0 10px #cfcccc;
+    transition: all 0.5s;
 }
 
 .photo_grande_activité
@@ -558,6 +566,7 @@ input[type="search" i]
      -ms-transform: scale(1.1);
       -o-transform: scale(1.1);
          transform: scale(1.1);
+         transition: all 0s;
 }
 
 #fort_de_pomègues:hover, #îles_du_frioul:hover, #garde:hover, #parc_longchamp:hover
@@ -567,6 +576,7 @@ input[type="search" i]
      -ms-transform: scale(1.1);
       -o-transform: scale(1.1);
          transform: scale(1.1);
+         transition: all 0s;
 }
 
 #fort_de_pomègues, #garde
@@ -578,6 +588,7 @@ input[type="search" i]
 {
     border-radius: 15px;
     box-shadow: 0 0 10px #cfcccc;
+    transition: all 0.5s;
 }
 
 /* footer */
