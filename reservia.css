@@ -40,13 +40,13 @@ nav
     display: flex;
 }
 
-nav ul
+nav div
 {
     display: flex;
-    list-style-type: none;
+    align-items: center;
 }
 
-nav li
+nav span
 {
     padding: 40px 30px 0;
 }
@@ -63,21 +63,46 @@ nav li
 nav a 
 {
     text-decoration: none;
+    color: #0065FC;
 }
 
 a
 {
     text-decoration: none;
-    color: black; 
+    color: #000;
 }
 
-nav li:hover
+.nav_activités
+{
+    padding: 40px 30px 0;
+}
+
+.nav_activités_a
+{
+    color: #000;
+}
+
+.nav_hébergements:hover
 {
     color: #0065FC;
     border-top: 2px solid #0065FC;
     margin-top: 0;
     font-weight: 500;
     padding: 38px 30px 0;
+}
+
+.nav_activités:hover
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    margin-top: 0;
+    font-weight: 500;
+    padding: 38px 30px 0;
+}
+
+.nav_activités_a:hover
+{
+    color: #0065FC;
 }
 
 #inscription
@@ -411,6 +436,8 @@ input[type="search" i]
 
 .img_populaire
 {
+    display: flex;
+    align-items: center;
     width: 35%;
     height: 100%;
     border-radius: 15px;
@@ -630,3 +657,162 @@ footer a:hover
     {
         margin: 0 0 1em 1em;
     }
+    .marseille
+    {
+        width: 35%;
+    }
+    .titre_marseille
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+    #les_plus_populaires
+    {
+        margin: 2% 1.5% 0 0;
+    }
+    .populaires .note
+    {
+        margin-top: 10%;
+    }
+    .populaires .note_2
+    {
+        margin-top: 10%;
+    }
+    footer
+    {
+        flex-direction: column;
+    }
+}
+
+/*Version Mobile*/
+
+@media (max-width: 600px)
+
+{
+    #page_sans_footer
+    {
+        margin: 0;
+    }
+    header
+    {
+        flex-direction: column;
+    }
+    #logo
+    {
+        margin-left: 20px;
+    }
+    #logo img
+    {
+        padding: 0;
+        margin: 0;
+    }
+
+/* nav */
+
+    #inscription
+    {
+        padding: 0;
+        position: relative;
+        bottom: 50px;
+        width: 0;
+        right: 100px;
+    }
+
+    .nav_hébergements
+    {
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+    }
+
+    .nav_activités
+    {
+        border-bottom: 3px solid #f2f2f2;
+    }
+
+    .nav_hébergements:hover, .nav_activités:hover 
+    {
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        padding: 0 30px 10px;
+        margin-top: 30px;
+        color: #0065FC;
+    }
+
+    .nav_activités_a:hover
+    {
+        color: #0065FC;
+    }
+
+    nav div
+    {
+        width: 100%;
+    }
+
+    .nav_activités, .nav_hébergements 
+    {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        padding: 0 30px 10px;
+        margin-top: 30px;
+    }
+
+    /* Hébergements */
+
+    #bloc_hébergements
+    {
+        flex-direction: column-reverse;
+    }
+
+    #recherche_hébergement
+    {
+        margin: 30px 20px;
+    }
+    .marseille
+    {
+    width: 100%;
+    }
+    #hébergements_marseille
+    {
+        background-color: white;
+        margin-right: 0;
+    }
+    #les_plus_populaires
+    {
+        border-radius: 0;
+        margin-right: 0;
+    }
+
+    .populaires
+    {
+        width: 90%;
+        margin-bottom: 3%;
+        height: 9em;
+    }
+
+    /* Activités */
+
+    .activités
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+    .activités a
+    {
+        width: 100%;
+    }
+    .double_activités
+    {
+        width: 100%;
+    }
+    .photo_grande_activité img
+    {
+        height: 9.9em;
+    }
+    .grande_activité
+    {
+        margin: 2% 0;
+    }
+}
