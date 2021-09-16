@@ -304,13 +304,13 @@ input[type="search" i]
     font-weight: bold;
     width: 100%;
     height: 2em;
+    margin-left: 4%;
     font-size: 1.2em;
 }
 
 .titre_marseille h3
 {
     margin-top: 4%;
-    margin-left: 4%;
 }
 
 .marseille
@@ -831,14 +831,10 @@ footer a:hover
         flex-direction: column-reverse;
     }
 
-    .titre_marseille
-    {
-        margin-left: 5%;
-    }
-
     .titre_marseille h3
     {
         margin-bottom: 8%;
+        margin-left: 5%;
     }
 
     #recherche_hébergement
