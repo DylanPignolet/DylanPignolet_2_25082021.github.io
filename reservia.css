@@ -31,13 +31,13 @@ header
 
 #logo img
 {
-    padding-top: 50%;
-    margin: 20%;
+    margin: 20% 20% 20% 0;
 }
 
 nav
 {  
     display: flex;
+    height: 100%;
 }
 
 nav div
